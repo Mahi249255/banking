@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: flex;justify-content: center; align-items: center; height: 100vh; ">dd
+    <div id="mainContainer">
+    <h1>Banking System</h1>
+
+    <label for="email">Enter your email address:</label><br>
+    <input type="email" id="email" placeholder="Enter email"><br><br>
+
+    <label for="choice">Select an option:</label><br>
+    <select id="choice" onchange="toggleAmountField()">
+        <option value="1">Check Balance</option>
+        <option value="2">Deposit Money</option>
+        <option value="3">Withdraw Money</option>
+    </select><br><br>
+
+    <div id="amount-input" style="display: none;">
+        <label for="amount">Enter amount:</label><br>
+        <input type="number" id="amount" placeholder="Enter amount"><br><br>
+    </div>
+
+    <button onclick="bankingSystem()">Submit</button><br><br>
+
+    <div id="result"></div>
+</div>
+</div>
+</body>
+</html>
